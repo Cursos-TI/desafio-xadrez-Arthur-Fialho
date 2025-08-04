@@ -58,47 +58,63 @@ int main() {
 
     switch(escolha){
         case 1:
-        for(int i = 0; i < 1; i++){
-            int j = 0;
-            while(j < cavaloMov){
-                printf("Cavalo moveu para cima\n");
-                j++;
-            }
-            printf("Cavalo moveu para esquerda\n");
+        int passos_realizados_vertical = 0;
+        int passos_realizados_horizontal = 0;
+
+        for (int k = 0; k < 3; k++) {
+        if (passos_realizados_vertical < 2) {
+            printf("Cavalo moveu para cima\n");
+            passos_realizados_vertical++;
+        } else if (passos_realizados_horizontal < 1) {
+            printf("Cavalo moveu para direita\n");
+            passos_realizados_horizontal++;
+        }
         }
         break;
         case 2:
-        for(int i = 0; i < 1; i++){
-            int j = 0;
-            while(j < cavaloMov){
+        passos_realizados_vertical = 0;
+        passos_realizados_horizontal = 0;
+
+        for (int k = 0; k < 3; k++) {
+            if (passos_realizados_vertical < 2) {
                 printf("Cavalo moveu para cima\n");
-                j++;
+                passos_realizados_vertical++;
+            } else if (passos_realizados_horizontal < 1) {
+                printf("Cavalo moveu para direita\n");
+                passos_realizados_horizontal++;
             }
-            printf("Cavalo moveu para direita\n");
         }
         break;
         case 3:
-        for(int i = 0; i < 1; i++){
-            int j = 0;
-            while(j < cavaloMov){
+        passos_realizados_vertical = 0;
+        passos_realizados_horizontal = 0;
+
+        for (int k = 0; k < 3; k++) {
+            if (passos_realizados_vertical < 2) {
                 printf("Cavalo moveu para baixo\n");
-                j++;
+                passos_realizados_vertical++;
+            } else if (passos_realizados_horizontal < 1) {
+                printf("Cavalo moveu para esquerda\n");
+                passos_realizados_horizontal++;
             }
-            printf("Cavalo moveu para esquerda\n");
         }
         break;
         case 4:
-        for(int i = 0; i < 1; i++){
-            int j = 0;
-            while(j < cavaloMov){
+        passos_realizados_vertical = 0;
+        passos_realizados_horizontal = 0;
+
+        for (int k = 0; k < 3; k++) {
+            if (passos_realizados_vertical < 2) {
                 printf("Cavalo moveu para baixo\n");
-                j++;
+                passos_realizados_vertical++;
+            } else if (passos_realizados_horizontal < 1) {
+                printf("Cavalo moveu para esquerda\n");
+                passos_realizados_horizontal++;
             }
-            printf("Cavalo moveu para direita\n");
         }
         break;
         default:
-        printf("Escolha invalida!\n");
+        printf("Opção inválida. Por favor, escolha uma direção válida.\n");
         break;
     }
 
