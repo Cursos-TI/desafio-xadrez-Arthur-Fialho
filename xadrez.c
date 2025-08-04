@@ -66,7 +66,7 @@ int main() {
             printf("Cavalo moveu para cima\n");
             passos_realizados_vertical++;
         } else if (passos_realizados_horizontal < 1) {
-            printf("Cavalo moveu para direita\n");
+            printf("Cavalo moveu para esquerda\n");
             passos_realizados_horizontal++;
         }
         }
@@ -80,7 +80,7 @@ int main() {
                 printf("Cavalo moveu para cima\n");
                 passos_realizados_vertical++;
             } else if (passos_realizados_horizontal < 1) {
-                printf("Cavalo moveu para direita\n");
+                printf("Cavalo moveu para esquerda\n");
                 passos_realizados_horizontal++;
             }
         }
@@ -108,7 +108,7 @@ int main() {
                 printf("Cavalo moveu para baixo\n");
                 passos_realizados_vertical++;
             } else if (passos_realizados_horizontal < 1) {
-                printf("Cavalo moveu para esquerda\n");
+                printf("Cavalo moveu para direita\n");
                 passos_realizados_horizontal++;
             }
         }
